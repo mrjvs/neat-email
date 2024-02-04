@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactElement } from 'react';
 import * as ReactDomServer from 'react-dom/server';
 
 import { inlineCss } from '@/render/css';
@@ -10,7 +10,7 @@ export type EmailPropsBase = {
 };
 
 export type EmailProps<T extends Record<any, any>> = T & EmailPropsBase & JSX.IntrinsicAttributes;
-export type EmailTemplate<T extends Record<any, any>> = React.FC<EmailProps<T>>;
+export type EmailTemplate<T extends Record<any, any>> = (props: EmailProps<T>) => ReactElement;
 
 export type EmailRenderOptions<T extends Record<any, any>> = {
   input: T;
@@ -18,7 +18,7 @@ export type EmailRenderOptions<T extends Record<any, any>> = {
 };
 
 export function createEmailTemplate<T extends Record<any, any>>(
-  cb: (props: EmailProps<T>) => ReactNode,
+  cb: (props: EmailProps<T>) => ReactElement,
 ): EmailTemplate<T> {
   return cb;
 }
