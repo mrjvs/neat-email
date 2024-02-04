@@ -11,6 +11,7 @@ Neat-email is a library that will simplify your email creations. Read the docs a
 > - Implement ui components: Link, Image, Button, Divider
 > - Add away to add asset loaders, for styles and for images
 > - Add a way to extract text from html body instead of specifying manually
+> - Add unit tests
 
 # 🔥Features
 - Easy component based emails with familiar JSX syntax
