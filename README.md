@@ -19,6 +19,13 @@ Neat-email is a library that will simplify your email creations. Read the docs a
 
 # 🧬 Get started
 
+> [!NOTE]
+> **Prerequisites:**
+>  - Install `react` with `npm i react`
+>  - Setup your project to support react JSX.
+>    - If you use typescript. In `tsconfig.json` simply set `compilerOptions.jsx` to `react` and write your email code in  `.tsx` files instead of `.ts`.
+>    - For other setups, you will need setup a toolchain for it yourself.
+
 First, install the library:
 ```bash
 npm install neat-email
