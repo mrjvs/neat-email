@@ -21,16 +21,16 @@ jobs:
 
     - name: Install packages
       working-directory: ./.docs
-      run: npm install
+      run: npm ci
     
     - name: Build project
       working-directory: ./.docs
-      run: npm run generate
+      run: npm run build
 
     - name: Upload production-ready build files
       uses: actions/upload-pages-artifact@v1
       with: 
-        path: ./.docs/.output/public
+        path: ./.docs/.out
 
   deploy:
     name: Deploy

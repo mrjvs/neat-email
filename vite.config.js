@@ -1,7 +1,7 @@
 const path = require('path');
 const { defineConfig } = require('vitest/config');
 const { default: eslint } = require('vite-plugin-eslint');
-const dts = require('vite-plugin-dts');
+const { default: dts } = require('vite-plugin-dts');
 const pkg = require('./package.json');
 const fs = require('fs/promises');
 

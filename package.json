@@ -1,6 +1,6 @@
 {
   "name": "neat-email",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simplify your emails with JSX",
   "main": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
