@@ -31,13 +31,13 @@ interface EmailInput {
 }
 
 const htmlTemplate = createEmailTemplate((props: EmailInput) => {
-  return <div>Hello {props.name}!</div>
+  return <div>Hello {props.name}!</div>;
 });
 
 const email = makeEmail<EmailInput>({
   html: htmlTemplate,
-  subject: (input) => `Introduction email for ${input.name}!`,
-  text: () => `Hello ${input.name}!`
+  text: (input) => `Hello ${input.name}!`,
+  subject: `Introduction email`,
 });
 
 const renderedEmail = email.render({

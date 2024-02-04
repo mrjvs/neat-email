@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import * as ReactDomServer from 'react-dom/server';
 
 import { inlineCss } from '@/render/css';
@@ -16,6 +16,12 @@ export type EmailRenderOptions<T extends Record<any, any>> = {
   input: T;
   template: EmailTemplate<T>;
 };
+
+export function createEmailTemplate<T extends Record<any, any>>(
+  cb: (props: EmailProps<T>) => ReactNode,
+): EmailTemplate<T> {
+  return cb;
+}
 
 export async function renderEmail<T extends Record<any, any>>(options: EmailRenderOptions<T>): Promise<string> {
   const Component = options.template;

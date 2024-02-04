@@ -1,5 +1,6 @@
 // functions
 export { makeEmail } from '@/builder/builder';
+export { createEmailTemplate } from '@/render/html';
 
 // types
 export type { CreateEmailOptions, Email } from '@/builder/builder';
