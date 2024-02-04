@@ -1,5 +1,7 @@
 # ⚡What is neat-email?
 
+STILL WIP!
+
 Neat-email is a library that will simplify your email creations. Read the docs at <a href="https://mrjvs.github.io/neat-email"><kbd>mrjvs.github.io/neat-email</kbd></a>.
 
 # 🔥Features
