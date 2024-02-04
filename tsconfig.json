@@ -11,6 +11,7 @@
     "experimentalDecorators": true,
     "isolatedModules": false,
     "skipLibCheck": true,
+    "jsx": "react",
     "paths": {
       "@/*": ["./*"],
       "@entrypoint": ["./index.ts"]
