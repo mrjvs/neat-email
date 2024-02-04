@@ -22,6 +22,7 @@ module.exports = defineConfig({
     },
   },
   build: {
+    ssr: true,
     minify: false,
     rollupOptions: {
       external: Object.keys(pkg.dependencies),
