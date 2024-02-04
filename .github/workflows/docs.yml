@@ -30,7 +30,7 @@ jobs:
     - name: Upload production-ready build files
       uses: actions/upload-pages-artifact@v1
       with: 
-        path: ./.docs/.out
+        path: ./.docs/out
 
   deploy:
     name: Deploy
